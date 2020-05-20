@@ -71,21 +71,21 @@ function addProblem(_title = "", _statement = "", _input = "", _output = "", _id
 
     let statement = document.createElement("h3");
     statement.setAttribute("class", "problem-statement");
-    let statementInput = document.createElement("input");
+    let statementInput = document.createElement("textarea");
     statement.innerText = "Enunt";
     if(_statement != "") {
         statementInput.value = _statement;
     }
     
     let input = document.createElement("h3");
-    let inputInput = document.createElement("input");
+    let inputInput = document.createElement("textarea");
     input.innerText = "Date de intrare";
     if(_input != "") {
         inputInput.value = _input;
     }
 
     let output = document.createElement("h3");
-    let outputInput = document.createElement("input");
+    let outputInput = document.createElement("textarea");
     output.innerText = "Date de iesire";
     if(_output != "") {
         outputInput.value = _output;
